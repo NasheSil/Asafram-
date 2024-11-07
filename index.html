@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asafram Orgánicos - Menú</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E4D5BE;
+            color: #333;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            font-size: 16px;
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .product-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+        .product-details {
+            display: flex;
+            flex-direction: column;
+        }
+        .product-name {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 0;
+        }
+        .product-price {
+            color: #4CAF50;
+            font-size: 0.9em;
+        }
+        .order-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .order-quantity {
+            width: 50px;
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            color: white;
+            background-color: #4CAF50;
+            text-align: center;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Asafram Orgánicos</h1>
+    <p>Bienvenidos a Asafram. Explora nuestros productos y realiza tu pedido directamente.</p>
+
+    <div class="product-list">
+        <!-- Productos con botón de ordenar y selector de cantidad -->
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Hogazas (masa madre)</p>
+                <p class="product-price">$8.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Hogazas (masa madre)" data-price="8000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Pan de molde (masa madre)</p>
+                <p class="product-price">$15.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Pan de molde (masa madre)" data-price="15000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Rollos de canela</p>
+                <p class="product-price">$2.500, $3.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Rollos de canela" data-price="2500">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Pan de sándwich (masa madre)</p>
+                <p class="product-price">$1.400</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Pan de sándwich (masa madre)" data-price="1400">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Para la hamburguesa (masa madre)</p>
+                <p class="product-price">$1.500</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Para la hamburguesa (masa madre)" data-price="1500">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Barras (masa madre) tipo pan francés</p>
+                <p class="product-price">$5.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Barras (masa madre) tipo pan francés" data-price="5000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Antipasto 300g</p>
+                <p class="product-price">$18.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Antipasto 300g" data-price="18000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Ceviche de mango 300g</p>
+                <p class="product-price">$15.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Ceviche de mango 300g" data-price="15000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Orellanas encurtidas 300g</p>
+                <p class="product-price">$18.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Orellanas encurtidas 300g" data-price="18000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Mantequilla ghee 300g</p>
+                <p class="product-price">$25.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Mantequilla ghee 300g" data-price="25000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Mermelada de mora 200g</p>
+                <p class="product-price">$12.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Mermelada de mora 200g" data-price="12000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Mermelada de uva 200g</p>
+                <p class="product-price">$12.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Mermelada de uva 200g" data-price="12000">
+            </div>
+        </div>
+
+        <div class="product-item">
+            <div class="product-details">
+                <p class="product-name">Arequipe de maracuyá 200g</p>
+                <p class="product-price">$14.000</p>
+            </div>
+            <div class="order-controls">
+                <input type="number" class="order-quantity" min="0" value="0" data-product="Arequipe de maracuyá 200g" data-price="14000">
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón para enviar el pedido -->
+    <button class="submit-btn" onclick="enviarPedido()">Enviar Pedido</button>
+
+    <script>
+        function enviarPedido() {
+            const quantities = document.querySelectorAll('.order-quantity');
+            let pedido = "";
+            let total = 0;
+            
+            quantities.forEach(item => {
+                const cantidad = parseInt(item.value);
+                if (cantidad > 0) {
+                    const nombreProducto = item.getAttribute('data-product');
+                    const precioProducto = parseInt(item.getAttribute('data-price'));
+                    const subtotal = precioProducto * cantidad;
+                    total += subtotal;
+                    pedido += `${nombreProducto} - Cantidad: ${cantidad} - Precio total: $${subtotal.toLocaleString()}\\n`;
+                }
+            });
+
+            if (pedido) {
+                pedido += `\\nTotal del pedido: $${total.toLocaleString()}`;
+                const mensaje = `Hola, quisiera hacer el siguiente pedido:\\n\\n${pedido}`;
+                const mensajeCodificado = encodeURIComponent(mensaje);
+
+                // Enviar a WhatsApp
+                const telefonoWhatsApp = "3175229550";
+                window.open(`https://wa.me/${telefonoWhatsApp}?text=${mensajeCodificado}`, "_blank");
+
+                // Enviar al correo
+                window.open(`mailto:adrian.silva.reyes@gmail.com?subject=Pedido Asafram Orgánicos&body=${mensajeCodificado}`);
+            } else {
+                alert("Por favor, selecciona al menos un producto.");
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
